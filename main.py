@@ -108,7 +108,7 @@ def search_result( query: str ):
     plt = plot.get_figure()
 
     pic_IObytes = BytesIO()
-    plt.savefig( pic_IObytes,  format='png' )
+    plt.savefig( pic_IObytes,  format='png', bbox_inches='tight' )
     pic_IObytes.seek( 0 )
     pic_hash = b64encode( pic_IObytes.read() )
 
