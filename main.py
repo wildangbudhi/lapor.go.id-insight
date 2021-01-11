@@ -139,4 +139,3 @@ def search():
 
     return render_template("result.html", **res)
 
-app.run()
